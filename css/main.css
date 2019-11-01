@@ -4,6 +4,7 @@
 
 :root {
   --border: rgba(0, 0, 0, 0.25);
+  --text-gray: rgba(0, 0, 0, 0.35);
 }
 
 * {
@@ -19,17 +20,159 @@ body {
 
 main {
   width: 600px;
-  height: 100vh;
+  height: 100%;
   margin: 0 auto;
   border-left: 1px solid var(--border);
   border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20vh;
 }
 
-main header {
+.main__header {
   padding: 16px;
   font-size: 18px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid var(--border);
+}
+
+.tweet {
+  display: flex;
+  padding: 24px 32px 16px 24px;
+
+}
+
+.tweet__ava {
+  width: 56px;
+  height: 56px;
+  margin-right: 16px;
+}
+
+.tweet__body__header h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.tweet__body__actions {
+  display: flex;
+}
+
+.tweet__body__actions li {
+  margin-right: 84px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.35);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.tweet__body__actions li span {
+  position: absolute;
+  left: 28px;
+}
+
+.tweet__body__header {
+  display: flex;
+  align-items: center;
+}
+
+.tweet__body__header * {
+  margin-right: 16px;
+}
+
+.tweet__body__header a {
+  font-size: 14px;
+  text-decoration: none;
+  color: var(--text-gray);
+}
+
+.tweet__body p {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 8px 0 16px;
+}
+
+
+
+/*
+Navigation
+*/
+
+nav {
+  position: fixed;
+  left: calc((100vw - 600px) / 2);
+  transform: translate(-100%);
+  padding: 24px 32px 0 0;
+}
+
+.nav__menu li:hover .nav__menu__icon{
+  background-color: blue;
+}
+
+.nav__menu__icon {
+  height: 27px;
+  width: 27px;
+  background-color: black;
+  transition: all 0.15s ease-in;
+  margin-right: 16px;
+}
+
+.nav__menu__icon--home {
+  mask: url(../img/icons/home.svg);
+  -webkit-mask: url(../img/icons/home.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.nav__menu__icon--bell {
+  mask: url(../img/icons/notif.svg);
+  -webkit-mask: url(../img/icons/notif.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.nav__menu__icon--chat {
+  mask: url(../img/icons/messages.svg);
+  -webkit-mask: url(../img/icons/messages.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.nav__menu__icon--book {
+  mask: url(../img/icons/bookmarks.svg);
+  -webkit-mask: url(../img/icons/bookmarks.svg);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+}
+
+.nav__menu li a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 16px 32px 16px 16px;
+  color: black;
+  transition: all 0.15s ease-in;
+}
+
+.nav__menu li:hover a {
+  color: blue;
+}
+
+#add {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: blue;
+  padding: 16px 55px;
+  margin-top: 32px;
+  box-shadow: 6px 6px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  transition: all 0.05s ease-in;
+}
+
+#add:hover {
+  filter: brightness(1.5);
 }
