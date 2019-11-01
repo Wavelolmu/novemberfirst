@@ -176,3 +176,40 @@ nav {
 #add:hover {
   filter: brightness(1.5);
 }
+
+
+
+/*
+Friends
+*/
+
+aside {
+  position: fixed;
+  top: 10px;
+  right: calc((100vw - 600px) / 2);
+  transform: translate(100%);
+  padding: 8px 0 0 32px;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside li {
+  border-bottom: 1px solid var(--border);
+  padding: 8px 16px;
+}
+
+.aside__li__img {
+  height: 40px;
+  width: 40px;
+}
+
+aside h2 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+li {
+  list-style-type: none;
+}
