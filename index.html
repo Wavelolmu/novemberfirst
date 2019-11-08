@@ -4,37 +4,41 @@
   <meta charset="utf-8">
   <title>Twi-teller</title>
   <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
+<div class="wrapper">
   <nav>
     <ul class="nav__menu">
       <li>
         <a href="#">
         <div class="nav__menu__icon nav__menu__icon--home"></div>
-        Главная
+        <span>Главная</span>
         </a>
       </li>
       <li>
         <a href="#">
         <div class="nav__menu__icon nav__menu__icon--bell"></div>
-        Уведомления
+        <span>Уведомления</span>
         </a>
       </li>
       <li>
         <a href="#">
         <div class="nav__menu__icon nav__menu__icon--chat"></div>
-        Сообщения
+        <span>Сообщения</span>
         </a>
       </li>
       <li>
         <a href="#">
         <div class="nav__menu__icon nav__menu__icon--book"></div>
-        Закладки
+        <span>Закладки</span>
         </a>
       </li>
     </ul>
-    <a href="#" id="add">Высказаться</a>
+    <div class="add_div">
+      <div class="div_icn"></div><a href="#" id="add">Высказаться</a>
+    </div>
   </nav>
 
   <main>
@@ -48,10 +52,11 @@
       <div class="tweet__body">
         <header class="tweet__body__header">
           <h3>Василий Ночь</h3>
-          <a href="#">@hi_bitch</a>
-          <a href="#">11 октября</a>
+            <a href="#">@hi_bitch</a>
+            <a href="#">11 октября</a>  
         </header>
         <p>Когда вы полагаете, что именно ваш самолет разобьется, или что именно ваш проект все назовут идиотским, или что именно вас все высмеют и растопчут, вы по сути говорите себе: «Я — исключение из правила, я не такой, как все остальные; я уникальный и особенный». Это чистой воды нарциссизм. Вы полагаете, что именно ваши проблемы заслуживают особого обращения, что именно ваши проблемы уникальны и не подчиняются законам физической вселенной.</p>
+
         <ul class="tweet__body__actions">
           <li>
             <img src="img/icons/reply.svg" alt="">
@@ -166,6 +171,7 @@
       </li>
     </ul>
   </aside>
+</div>
 
 </body>
 </html>
