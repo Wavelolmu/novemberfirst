@@ -4,7 +4,7 @@
 
 :root {
   --border: rgba(0, 0, 0, 0.25);
-  --text-gray: rgba(0, 0, 0, 0.35);
+  --text-gray: rgba(0, 0, 0, 0.5);
 }
 
 * {
@@ -184,15 +184,15 @@ Friends
 */
 
 aside {
+  width: 320px;
   position: fixed;
   top: 10px;
   right: calc((100vw - 600px) / 2);
-  transform: translate(100%);
-  padding: 8px 0 0 32px;
-}
-
-aside a {
-  text-decoration: none;
+  transform: translate(352px);
+  margin-left: 32px;
+  padding: 8px 0 0px 0px;
+  background-color: rgba(25, 25, 25, 0.05);
+  border-radius: 12px;
 }
 
 aside li {
@@ -200,9 +200,15 @@ aside li {
   padding: 8px 16px;
 }
 
+aside li:last-child {
+  border-bottom: none;
+}
+
 .aside__li__img {
   height: 40px;
   width: 40px;
+  position: absolute;
+  transform: translate(-48px);
 }
 
 aside h2 {
@@ -210,6 +216,30 @@ aside h2 {
   font-weight: bold;
 }
 
+aside a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  transform: translate(48px);
+}
+
+aside span {
+  color: var(--text-gray);
+  font-weight: normal;
+}
+
 li {
   list-style-type: none;
+}
+
+#show_more {
+  color: blue;
+  font-weight: normal;
+  transform: translate(0px);
+  font-size: 14px;
 }
